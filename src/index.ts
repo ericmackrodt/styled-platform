@@ -31,4 +31,4 @@ function generatePlatformConditionalStyle(): PlatformStyles {
   };
 }
 
-export const platform = generatePlatformConditionalStyle();
+export default generatePlatformConditionalStyle();
