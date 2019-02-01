@@ -1,0 +1,22 @@
+{
+  "name": "styled-platform",
+  "version": "0.0.0",
+  "description": "Platform selection for styled-components",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/ericmackrodt/styled-platform",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Mackrodt",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react-native": "^0.57.32",
+    "@types/styled-components": "^4.1.6",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.1"
+  }
+}
