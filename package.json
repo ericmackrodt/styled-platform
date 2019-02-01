@@ -1,6 +1,6 @@
 {
   "name": "styled-platform",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Platform selection for styled-components",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
