@@ -1,9 +1,9 @@
 {
   "name": "styled-platform",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Platform selection for styled-components",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "repository": "https://github.com/ericmackrodt/styled-platform",
   "scripts": {
     "build": "tsc",
