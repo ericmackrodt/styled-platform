@@ -14,20 +14,15 @@ type Platforms<T> = {
 
 type PlatformStyles = Platforms<ThemedCssFunction<{}>>;
 
+const makeFunction = (platform: string) =>
+  ((strings: TemplateStringsArray, ...interpolations: SimpleInterpolation[]) =>
+    Platform.OS === platform &&
+    css(strings, ...interpolations)) as ThemedCssFunction<{}>;
+
 function generatePlatformConditionalStyle(): PlatformStyles {
   return {
-    ios: ((
-      strings: TemplateStringsArray,
-      ...interpolations: SimpleInterpolation[]
-    ) =>
-      Platform.OS === "ios" &&
-      css(strings, ...interpolations)) as ThemedCssFunction<{}>,
-    android: ((
-      strings: TemplateStringsArray,
-      ...interpolations: SimpleInterpolation[]
-    ) =>
-      Platform.OS === "android" &&
-      css(strings, ...interpolations)) as ThemedCssFunction<{}>
+    ios: makeFunction("ios"),
+    android: makeFunction("android")
   };
 }
 
